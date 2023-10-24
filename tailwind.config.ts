@@ -9,9 +9,10 @@ const config: Config = {
   theme: {
     colors: {
       'Theme-black':'#1E1E1E',
-      'Theme-cream':'#FEE9D0'
+      'Theme-cream':'#FEE9D0',
+      'white': '#ffffff'
     }
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 export default config
