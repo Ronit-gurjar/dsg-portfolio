@@ -6,7 +6,7 @@ export default function Home() {
   const imageStyle = {
     borderRadius: '50%',
     border: '1px solid #fff',
-
+          
   }
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-4">
@@ -49,10 +49,8 @@ export default function Home() {
             <p>
               I am <b>Dilip Singh Gurjar</b>.
               <br />
-              I have been practicing Law and have experience of more than a Decade.
-              I like to build trust with my clients and help them get their JUSTICE.
-              <br />
-              Lorem ipsum dolor sit amet consect, adipisicing elit.
+              a dedicated advocate with over a decade of experience practicing law. 
+              Having built a career on trust, I am committed to helping clients achieve the justice they deserve.
               </p>
           </div>
           <div><button className='btn btn-neutral'><BsChevronDoubleDown/>see more</button></div>
