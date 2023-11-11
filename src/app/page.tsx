@@ -5,8 +5,8 @@ import { BsChevronDoubleDown } from 'react-icons/bs';
 export default function Home() {
   const imageStyle = {
     borderRadius: '50%',
-    border: '1px solid #fff',
-          
+    outline: '2px solid #fff',
+    outlineOffset: '10px'
   }
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-4">
@@ -18,7 +18,6 @@ export default function Home() {
             width={40}
             height={40}
             alt="Advocate"
-            style={imageStyle}
           />
           </div>
           <div className='flex flex-row gap-2'>
