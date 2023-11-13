@@ -24,10 +24,10 @@ export default function Home() {
             <button className="btn btn-outline">book a session</button>
           </div>
         </div>
-        <div className='flex flex-col lg:flex-row lg:items-center mt-8 gap-10 p-11'>
+        <div className='flex flex-col lg:flex-row lg:items-center mt-2 lg:mt-16 gap-10 p-6 lg:p-10'>
           <div className='flex flex-col items-center text-white text-2xl lg:text-6xl'>
             <h3 >Advocate</h3>
-            <h1 className='text-3xl'>DILIP SINGH GURJAR</h1>
+            <h1 className='text-2xl'>DILIP SINGH GURJAR</h1>
           </div>
           <div className='flex flex-col items-center'>
           <Image
@@ -45,7 +45,7 @@ export default function Home() {
         </div>
         <div className='flex flex-col justify-center items-center gap-6'>
           <div className='text-xl'>
-            <p className='text-center text-2xl'>
+            <p className='text-center lg:text-2xl'>
               I am <b>Dilip Singh Gurjar</b>.
               <br />
               a dedicated advocate with over a decade of experience practicing law. 
