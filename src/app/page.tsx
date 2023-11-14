@@ -1,17 +1,14 @@
 import Image from 'next/image'
-import pfp from '../../public/profile.jpg'
-import { BsChevronDoubleDown } from 'react-icons/bs';
+import { motion } from "framer-motion"
+
+import RotatingButton from './components/button/RotatingButton'
+import TiltImageCard from './components/card/TiltImageCard'
 
 export default function Home() {
-  const imageStyle = {
-    borderRadius: '50%',
-    outline: '2px solid #fff',
-    outlineOffset: '10px'
-  }
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-4">
       <div className='flex flex-col items-center mx-auto bg-Theme-black rounded-xl shadow-md overflow-hidden p-8'>
-        <div className='flex flex-row items-center gap-20 lg:gap-40 lg:justify-left'>
+        <div className='flex flex-row items-center gap-20 lg:gap-40 lg:ml-72'>
           <div>
           <Image
             src="/favicon.ico"
@@ -24,26 +21,20 @@ export default function Home() {
             <button className="btn btn-outline">book a session</button>
           </div>
         </div>
-        <div className='flex flex-col lg:flex-row lg:items-center mt-2 lg:mt-16 gap-10 p-6 lg:p-10'>
+        <div className='flex flex-col lg:flex-row lg:items-center mt-1 lg:mt-10 gap-10 p-6 lg:p-10'>
           <div className='flex flex-col items-center text-white text-2xl lg:text-6xl'>
             <h3 >Advocate</h3>
             <h1 className='text-2xl'>DILIP SINGH GURJAR</h1>
           </div>
           <div className='flex flex-col items-center'>
-          <Image
-            src={pfp}
-            width={400}
-            height={400}
-            alt="Dilip Singh Gurjar"
-            style={imageStyle}
-          />
+            <TiltImageCard/>
           </div>
           <div className='flex flex-col items-center text-white text-2xl lg:text-6xl'>
             <h3 >Speacialist</h3>
             <h1 className='text-3xl'>Criminal law</h1>
           </div>
         </div>
-        <div className='flex flex-col justify-center items-center gap-6'>
+        <div className='flex flex-col justify-center items-center gap-4'>
           <div className='text-xl'>
             <p className='text-center lg:text-2xl'>
               I am <b>Dilip Singh Gurjar</b>.
@@ -52,7 +43,7 @@ export default function Home() {
               Having built a career on trust, I am committed to helping clients achieve the justice they deserve.
               </p>
           </div>
-          <div><button className='btn btn-neutral'><BsChevronDoubleDown/>see more</button></div>
+          <div><RotatingButton/></div>
         </div>
       </div>
     </main>
