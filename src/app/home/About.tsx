@@ -2,6 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import figure from '../../../public/lady justice.png'
+import { FaPlus } from "react-icons/fa6";
+import { MdPendingActions } from "react-icons/md";
+import { AiOutlineFileDone } from "react-icons/ai";
+
 import CounterCard from '../components/card/CounterCard'
 
 const About = () => {
@@ -15,21 +19,26 @@ const About = () => {
             whileInView={{opacity: 1, scale:1}} //to create view based animations
             transition={{duration:1.5}}
         >
-            <CounterCard num={1700} title='Total Cases'/>
-            <CounterCard num={1009} title='Pending Cases'/>
-            <CounterCard num={746} title='Desposed Cases'/>
+            <CounterCard num={1700} title='Total Cases' icon={<FaPlus/>}/>
+            <CounterCard num={1009} title='Pending Cases' icon={<MdPendingActions/>}/>
+            <CounterCard num={746} title='Desposed Cases' icon={<AiOutlineFileDone/>}/>
         </motion.div>
-        <div className='flex flex-col lg:flex-row justify-center gap-8'>
+        <div className='flex flex-col lg:flex-row items-center justify-center gap-4'>
             <div className='w-fit'>
-                <Image src={figure} alt='justice' width={700} height={500}/>
+                <Image src={figure} alt='justice' width={500} height={400}/>
             </div>
-            <div className='w-96'>
-                <p className='text-2xl text-Theme-black bg-Theme-cream -mt-48 lg:mt-0 lg:p-10'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Maxime dolorum, sequi sint explicabo placeat et ullam exercitationem.
-                    Ut iste necessitatibus quia, praesentium magni recusandae totam dolore, voluptatibus ex, corrupti libero!
-                   
-                </p>
+            <div className='w-fit text-2xl text-Theme-black lg:w-6/12'>
+                
+                With a career spanning over a decade since embarking on self-practice in
+                  <strong> 2011, Dilip Singh Gurjar</strong> has emerged as a seasoned advocate specializing in critical legal realms.
+                  Renowned for expertise in navigating complex legal landscapes,
+                  he have excelled in cases pertaining to the <strong>376 POCSO Act, 302, 307, 326, and NIA 138 </strong>.
+                  <br/>
+                  <br/>
+                  <strong>Dilip Singh Gurjar</strong> brings a wealth of experience and a deep understanding of these intricate legal matters,
+                  ensuring steadfast representation and advocacy for each client.
+                  The track record is not just a testament to professional prowess but a commitment to upholding justice and safeguarding rights in every case undertaken.
+                
             </div>
         </div>
     </div>
