@@ -6,7 +6,7 @@ import {BsFillSendFill} from 'react-icons/bs'
 
 const ContactForm = () => {
   return (
-    <form className='bg-Theme-black flex flex-col relative top-0 rounded-md p-8' action={async (formData) =>{
+    <form className='bg-Theme-black w-96 lg:w-full h-fit flex flex-col relative top-0 rounded-md p-8' action={async (formData) =>{
         await sendEmail(formData)
     }}>
         <h1 className='text-3xl font-serif p-8 bg-Theme-cream text-Theme-black rounded-md'>Request a Free Quote</h1>
