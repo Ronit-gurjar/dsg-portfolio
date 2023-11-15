@@ -10,7 +10,7 @@ import CounterCard from '../components/card/CounterCard'
 
 const About = () => {
   return (
-    <div className='flex flex-col item-center justify-center gap-4 p-2'>
+    <motion.div className='flex flex-col item-center justify-center gap-4 p-2'>
         <div><h1 className='text-4xl text-Theme-black text-center underline underline-offset-4 font-serif p-2'>Experience</h1></div>
         
         <motion.div
@@ -41,7 +41,7 @@ const About = () => {
                 
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
