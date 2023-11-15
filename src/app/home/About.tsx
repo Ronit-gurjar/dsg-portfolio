@@ -17,7 +17,7 @@ const About = () => {
             className='flex flex-col lg:flex-row lg:justify-center gap-4'
             initial={{opacity: 0, scale:0}}
             whileInView={{opacity: 1, scale:1}} //to create view based animations
-            transition={{duration:1.5}}
+            transition={{type:'spring',duration:1}}
         >
             <CounterCard num={1700} title='Total Cases' icon={<FaPlus/>}/>
             <CounterCard num={1009} title='Pending Cases' icon={<MdPendingActions/>}/>
