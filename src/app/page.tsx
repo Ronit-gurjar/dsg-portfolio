@@ -5,6 +5,7 @@ import { motion, useScroll } from 'framer-motion'
 import HomeSection from './home/Home'
 import About from './home/About'
 import Team from './home/Team'
+import Service from './home/Service'
 
 export default function Home() {
   const { scrollYProgress} = useScroll();
@@ -23,9 +24,12 @@ export default function Home() {
             borderRadius:'20px'
         }}
         />
+      <motion.div>
       <HomeSection/>
       <About/>
       <Team/>
+      <Service/>
+      </motion.div>
     </main>
   )
 }
