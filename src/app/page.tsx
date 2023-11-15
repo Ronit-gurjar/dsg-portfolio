@@ -6,11 +6,12 @@ import HomeSection from './home/Home'
 import About from './home/About'
 import Team from './home/Team'
 import Service from './home/Service'
+import Footer from './home/Footer'
 
 export default function Home() {
   const { scrollYProgress} = useScroll();
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex w-full flex-col items-center justify-between">
       <motion.div
         style={{
             scaleX: scrollYProgress,
@@ -29,6 +30,7 @@ export default function Home() {
       <About/>
       <Team/>
       <Service/>
+      <Footer/>
       </motion.div>
     </main>
   )
