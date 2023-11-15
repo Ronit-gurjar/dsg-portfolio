@@ -4,11 +4,12 @@ import React from 'react'
 import { motion, useScroll } from 'framer-motion'
 import HomeSection from './home/Home'
 import About from './home/About'
+import Team from './home/Team'
 
 export default function Home() {
   const { scrollYProgress} = useScroll();
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-4">
+    <main className="flex min-h-screen flex-col items-center justify-between">
       <motion.div
         style={{
             scaleX: scrollYProgress,
@@ -24,6 +25,7 @@ export default function Home() {
         />
       <HomeSection/>
       <About/>
+      <Team/>
     </main>
   )
 }
