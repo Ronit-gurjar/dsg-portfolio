@@ -8,7 +8,7 @@ import TiltImageCard from '../components/card/TiltImageCard'
 
 const HomeSection = () => {
   return (
-    <div>
+    <div className='p-4'>
         <div className='flex flex-col items-center mx-auto bg-Theme-black rounded-xl shadow-md overflow-hidden p-8'>
         <div className='flex flex-row items-center gap-20 lg:gap-40 lg:ml-72'>
           <div>
@@ -41,7 +41,7 @@ const HomeSection = () => {
             <p className='text-center lg:text-2xl'>
               I am <b>Dilip Singh Gurjar</b>.
               <br />
-              a dedicated advocate with over a decade of experience practicing law. 
+              A dedicated advocate with over a decade of experience practicing law. 
               Having built a career on trust, I am committed to helping clients achieve the justice they deserve.
               </p>
           </div>
