@@ -33,7 +33,7 @@ const HomeSection = () => {
           </div>
           <div className='flex flex-col items-center text-white text-2xl lg:text-6xl'>
             <h3 >Speacialist</h3>
-            <h1 className='text-3xl'>Criminal law</h1>
+            <h1 className='text-3xl'>Criminal lawyer</h1>
           </div>
         </div>
         <div className='flex flex-col justify-center items-center gap-4'>
