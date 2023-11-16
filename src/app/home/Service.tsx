@@ -37,7 +37,7 @@ const Service = () => {
                 </div>
             </div>
             <motion.div className='w-fit flex justify-center'
-            initial={{opacity: 0, y:100}}
+            initial={{opacity: 0, y:50}}
             whileInView={{opacity: 1, y:0}} //to create view based animations
             transition={{type:'spring',duration:1}}
             >
