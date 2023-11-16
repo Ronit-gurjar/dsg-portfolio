@@ -1,9 +1,7 @@
 'use client'
 
 import React from 'react'
-import Image from 'next/image'
 
-import RotatingButton from '../components/button/RotatingButton'
 import TiltImageCard from '../components/card/TiltImageCard'
 import IconButton from '../components/button/IconButton'
 import { FaFacebookSquare } from "react-icons/fa";
@@ -13,12 +11,12 @@ import { MdCopyright } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className='p-4 lg:h-screen'>
+    <div className='p-4 lg:mt-4'>
         <div className='flex flex-col items-center mx-auto bg-Theme-black rounded-xl shadow-md overflow-hidden p-8'>
         <div className='flex flex-col lg:flex-row lg:items-center mt-1 lg:mt-10 gap-10 p-6 lg:p-10'>
           <div className='flex flex-col items-center text-white text-2xl lg:text-6xl'>
             <h3 >Advocate</h3>
-            <h1 className='text-3xl'>DILIP SINGH GURJAR</h1>
+            <h1 className='text-2xl lg:text-4xl'>DILIP SINGH GURJAR</h1>
           </div>
           <div className='flex flex-col items-center'>
             <TiltImageCard/>
