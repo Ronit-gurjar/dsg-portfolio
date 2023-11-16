@@ -11,7 +11,7 @@ import Footer from './home/Footer'
 export default function Home() {
   const { scrollYProgress} = useScroll();
   return (
-    <main className="flex w-full flex-col items-center justify-between">
+    <main className="flex flex-col items-center justify-between p-4">
       <motion.div
         style={{
             scaleX: scrollYProgress,
