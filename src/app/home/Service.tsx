@@ -18,11 +18,12 @@ const Service = () => {
             transition={{type:'spring',duration:1}}
             >  
                 <LabelCard label='Criminal Cases'/>
-                <LabelCard label='Criminal Cases'/>
-                <LabelCard label='Criminal Cases'/>
+                <LabelCard label='Civil Cases'/>
+                <LabelCard label='Claim Cases'/>
+                <LabelCard label='NIA Cases'/>
             </motion.div>
         </div>
-        <div className='flex flex-col items-center justify-center lg:gap-20 lg:flex-row lg:w-fit p-10'>
+        <div className='flex flex-col items-center justify-center lg:gap-20 lg:flex-row lg:w-fit p-6'>
             <div className='flex flex-col lg:flex-row items-center text-center p-6'>
                 <div>
                     <Image src={Law} width={400} height={400} alt='law'/>
