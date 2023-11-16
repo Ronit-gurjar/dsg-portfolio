@@ -11,7 +11,7 @@ import { MdCopyright } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className='p-4 lg:mt-4'>
+    <div className='p-4 mt-7 lg:mt-14'>
         <div className='flex flex-col items-center mx-auto bg-Theme-black rounded-xl shadow-md overflow-hidden p-8'>
         <div className='flex flex-col lg:flex-row lg:items-center mt-1 lg:mt-10 gap-10 p-6 lg:p-10'>
           <div className='flex flex-col items-center text-white text-2xl lg:text-6xl'>
