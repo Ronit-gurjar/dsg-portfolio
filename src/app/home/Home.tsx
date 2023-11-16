@@ -10,7 +10,7 @@ const HomeSection = () => {
   return (
     <div className='p-4'>
         <div className='flex flex-col items-center mx-auto bg-Theme-black rounded-xl shadow-md overflow-hidden p-8'>
-        <div className='flex flex-row items-center gap-20 lg:gap-40 lg:ml-72'>
+        <div className='flex flex-row items-center gap-20 lg:gap-40'>
           <div>
           <Image
             src="/favicon.ico"
@@ -18,9 +18,6 @@ const HomeSection = () => {
             height={40}
             alt="Advocate"
           />
-          </div>
-          <div className='flex flex-row gap-2'>
-            <button className="btn btn-outline">book a session</button>
           </div>
         </div>
         <div className='flex flex-col lg:flex-row lg:items-center mt-1 lg:mt-10 gap-10 p-6 lg:p-10'>
