@@ -15,8 +15,8 @@ const About = () => {
         
         <motion.div
             className='flex flex-col lg:flex-row lg:justify-center gap-4'
-            initial={{opacity: 0, scale:0}}
-            whileInView={{opacity: 1, scale:1}} //to create view based animations
+            initial={{opacity: 0, scale:0.4}}
+            whileInView={{opacity: 1, scale:0.95}} //to create view based animations
             transition={{type:'spring',duration:1}}
         >
             <CounterCard num={1700} title='Total Cases' icon={<FaPlus/>}/>
@@ -27,7 +27,7 @@ const About = () => {
             <div className='w-fit'>
                 <Image src={figure} alt='justice' width={500} height={400}/>
             </div>
-            <div className='w-fit text-2xl text-Theme-black lg:w-6/12'>
+            <div className='w-fit text-2xl text-Theme-black lg:w-6/12 p-6'>
                 
                 With a career spanning over a decade since embarking on self-practice in
                   <strong> 2011, Dilip Singh Gurjar</strong> has emerged as a seasoned advocate specializing in critical legal realms.

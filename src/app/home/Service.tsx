@@ -1,4 +1,4 @@
-import React from "react"
+import React  from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Law from "../../../public/law.png"
@@ -12,7 +12,7 @@ const Service = () => {
     <div className="flex flex-col items-center justify-center">
         <div className="flex flex-col item-center justify-center p-2">
             <div><h1 className="text-4xl text-Theme-black text-center underline underline-offset-4 font-serif p-2">Our Services</h1></div>
-            <motion.div className="flex flex-col lg:flex-row gap-4 items-center justify-center mt-4"
+            <motion.div className="flex flex-col lg:flex-row gap-4 items-center justify-center w-fit mt-4"
             initial={{opacity: 0, scale:0.8}}
             whileInView={{opacity: 1, scale:1}} //to create view based animations
             transition={{type:"spring",duration:1}}
@@ -39,7 +39,7 @@ const Service = () => {
             <motion.div className="w-fit flex justify-center"
             initial={{opacity: 0, y:50}}
             whileInView={{opacity: 1, y:0}} //to create view based animations
-            transition={{type:"spring",duration:1}}
+            transition={{type:"spring",duration:1, delay:0.5}}
             >
                 <ContactForm/>
             </motion.div>

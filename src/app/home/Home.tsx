@@ -1,16 +1,45 @@
 'use client'
 
-import React from 'react'
+import React, { useRef } from 'react'
 import Image from 'next/image'
+import { motion, useScroll } from 'framer-motion'
 
 import RotatingButton from '../components/button/RotatingButton'
 import TiltImageCard from '../components/card/TiltImageCard'
+import About from './About'
+import Team from './Team'
+import Service from './Service'
+import Footer from './Footer'
 
 const HomeSection = () => {
+  const targetRef = useRef<HTMLDivElement>(null)
+  
+  const { scrollYProgress} = useScroll();
+
+  const handleClick = () =>{
+    targetRef.current?.scrollIntoView({ behavior:'smooth'})
+  }
   return (
-    <div className='p-4'>
+    <>
+
+    <motion.div
+      className='hidden lg:block'
+        style={{
+            scaleX: scrollYProgress,
+            transformOrigin: "left",
+            position: "sticky",
+            top: 0,
+            width: "100%",
+            height: "4px",
+            background:"#1E1E1E",
+            border:'1px solid #FEE9D0',
+            borderRadius:'20px'
+        }}
+        />
+    <motion.div>
+    <div className='p-8 -mt-6 w-fit'>
         <div className='flex flex-col items-center mx-auto bg-Theme-black rounded-xl shadow-md overflow-hidden p-8'>
-        <div className='flex flex-row items-center gap-20 lg:gap-40'>
+        <div className='flex flex-row items-center gap-20 lg:gap-40 lg:ml-56'>
           <div>
           <Image
             src="/favicon.ico"
@@ -18,6 +47,9 @@ const HomeSection = () => {
             height={40}
             alt="Advocate"
           />
+          </div>
+          <div className='hidden lg:block'>
+          <button onClick={handleClick} className='btn btn-outline text-Theme-cream'>Contact</button>
           </div>
         </div>
         <div className='flex flex-col lg:flex-row lg:items-center mt-1 lg:mt-10 gap-10 p-6 lg:p-10'>
@@ -35,7 +67,7 @@ const HomeSection = () => {
         </div>
         <div className='flex flex-col justify-center items-center gap-4'>
           <div className='text-xl'>
-            <p className='text-center lg:text-2xl'>
+            <p className='text-center text-lg lg:text-2xl text-Theme-cream'>
               I am <b>Dilip Singh Gurjar</b>.
               <br />
               A dedicated advocate with over a decade of experience practicing law. 
@@ -46,6 +78,14 @@ const HomeSection = () => {
         </div>
       </div>
     </div>
+    
+    <About/>
+    <Team/>
+    <div ref={targetRef}><Service/></div>
+    <Footer/>
+    </motion.div>
+
+    </>
   )
 }
 
