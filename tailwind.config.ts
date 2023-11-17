@@ -11,6 +11,10 @@ const config: Config = {
       'Theme-black':'#1E1E1E',
       'Theme-cream':'#FEE9D0',
       'white': '#ffffff'
+    },
+    screens: {
+      'sm': '375px',
+      'lg': '1024px',
     }
   },
   plugins: [require("daisyui")],
